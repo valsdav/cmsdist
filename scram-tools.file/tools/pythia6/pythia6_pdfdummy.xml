@@ -1,0 +1,4 @@
+<tool name="pythia6_pdfdummy" version="@TOOL_VERSION@">
+  <lib name="pythia6_pdfdummy"/>
+  <flags NO_RECURSIVE_EXPORT="1"/>
+</tool>
