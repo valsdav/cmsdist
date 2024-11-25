@@ -1,4 +1,4 @@
-<tool name="lhapdf" version="@TOOL_VERSION@">
+<tool name="lhapdf" version="@TOOL_VERSION@" revision="1">
   <lib name="LHAPDF"/>
   <client>
     <environment name="LHAPDF_BASE" default="@TOOL_ROOT@"/>
