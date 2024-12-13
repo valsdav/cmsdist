@@ -168,7 +168,7 @@ for t in %{extra_tools}; do %scramcmd setup $t; done
 %if "%{?remove_tools:set}" == "set"
 for t in %{remove_tools}; do  %scramcmd tool remove $t; done
 %endif
-echo -e '<tool name="cmssw-config" version="%{configtag}" revision="1"></tool>' > %{i}/config/toolbox/%{cmsplatf}/tools/selected/cmssw-config.xml
+echo -e '<tool name="cmssw-config" version="%{configtag}" revision="1">\n</tool>' > %{i}/config/toolbox/%{cmsplatf}/tools/selected/cmssw-config.xml
 %scramcmd setup cmssw-config
 %{?buildarch:%buildarch}
 
